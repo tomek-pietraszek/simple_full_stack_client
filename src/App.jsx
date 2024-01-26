@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Submit from './components/Submit'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Submit from "./components/Submit";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -30,9 +30,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Submit count={count}/>
+      <Submit count={count} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
