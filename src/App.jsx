@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Submit from "./components/Submit";
+import { getCountFromCookies } from "./apiCalls.js/countApi";
+
+
 
 function App() {
   const [count, setCount] = useState(0);
+  
+  
+  useEffect(()=>{
+  getCountFromCookies(setCount)
+   
+  },[])
+
 
   return (
     <>
